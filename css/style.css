@@ -1,0 +1,180 @@
+/*reset*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar{
+    font-family: 'Averia Serif Libre', cursive;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#logo{
+    margin: 3px 6px;
+}
+#logo img{
+    height: 90px;
+    width: 90px;
+    margin: 3px 5px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 5px 34px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#navbar ul li a:hover{
+   color: black;
+   background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 623px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    font-family: 'Averia Serif Libre', cursive;
+    color: black;
+    text-align: center;
+}
+#home p {
+    font-family: 'Averia Serif Libre', cursive;
+    color:rgb(52, 75, 75);
+    text-align: center;
+    font-size: 1.5rem;
+}
+/*services*/
+#services{
+    display: flex;
+    margin: 34px;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 3px 34px;
+    margin: 4px 10px;
+    border-radius: 20px;
+} 
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: 'Averia Serif Libre', cursive;
+    margin-bottom: 20px;
+}
+/*services*/
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../bg.jpg') no-repeat center center/cover;
+    height: 45.5%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.client-items{
+    padding: 34px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img
+{
+    height: 155px;
+}
+/*contact us*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../contactus.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.5;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    
+    padding-bottom: 34px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+/*utility classes*/
+.h-primary{
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 2.0rem;
+    padding: 12px;
+}
+.btn{
+    padding: 5px 18px;
+    border-radius: 6px;
+    margin: 15px;
+    background-color: brown;
+    font-size: 19px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
